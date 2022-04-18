@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "862689320614",
+    "project_id": "login-page-ae3e0",
+    "storage_bucket": "login-page-ae3e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862689320614:android:15f2853fcf4dfbdbe19e67",
+        "android_client_info": {
+          "package_name": "com.belajarkotlin.loginpage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862689320614-j925gpfn6mml8h93c9a8vdsjpe17dg2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOdV26r6jdid01E_DOoaEBL0iTcmCqA5w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862689320614-j925gpfn6mml8h93c9a8vdsjpe17dg2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

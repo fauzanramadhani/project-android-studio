@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="minHeight">48dp</item>
+        <item name="fontFamily">Arial</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+    </style>
+    <style name="Widget.LoginPage.TextView.SignUp" parent="Widget.MaterialComponents.TextView">
+        <item name="minHeight">48dp</item>
+        <item name="fontFamily">Arial</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+        <item name="android:textColor">@color/design_default_color_secondary</item>
+    </style>
+
+</resources>
