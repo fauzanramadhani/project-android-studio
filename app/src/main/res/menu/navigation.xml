@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_button"
+        android:enabled="true"
+        android:icon="@drawable/house"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/post_button"
+        android:enabled="true"
+        android:icon="@drawable/more"
+        android:title="Post"/>
+    <item
+        android:id="@+id/setting_button"
+        android:enabled="true"
+        android:icon="@drawable/setting"
+        android:title="Setting"/>
+
+</menu>

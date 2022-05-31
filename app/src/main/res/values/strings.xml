@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Be Simple Be Social</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+    <string name="membuat_akun_baru"><u>Membuat Akun Baru</u></string>
+    <string name="lupa_password"><u>Lupa Password?</u></string>
+    <string name="belum_punya_akun">Belum Punya Akun?</string>
+    <string name="sudah_punya_akun">Sudah Punya Akun?</string>
+    <string name="login_disini"><u>Login Disini</u></string>
+    <string name="nik">NIK</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="email_example">rizkywibawa0543211@gmail.com</string>
+    <string name="silahkan_isi_data">Silahkan Lengkapi Informasi Anda</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="nomor_rumah">Nomor Rumah</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="selesai">selesai</string>
+    <string name="khusus_pejabat">Jika anda adalah pejabat daerah silahkan hubungi admin untuk menaikan level akun anda</string>
+    <string name="signout">keluar</string>
+    <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="ubah_sandi">Ubah Sandi</string>
+    <string name="ubah_informasi">Ubah Informasi</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="logout_akun">Logout Akun</string>
+    <string name="home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="show_nik_value">0811111111111111111</string>
+    <string name="show_name_value">Fauzan Gracia Ramadhani</string>
+    <string name="show_alamat_value">X33/10</string>
+    <string name="show_phone_number_value">082275784391</string>
+    <string name="show_nik">NIK</string>
+    <string name="nama">Nama</string>
+    <string name="edit">Edit</string>
+    <string name="silahkan_masukan_email_anda">Silahkan Masukan Email Anda</string>
+    <string name="forgot_password_explain">kami akan mengirimkan tautan untuk mengatur ulang kata sandi anda</string>
+    <string name="kirim">Kirim</string>
+    <string name="explain_change_password">Tindakan ini mengharuskan Anda untuk pernah login baru-baru ini. Jika Anda sudah cukup lama sejak Login terakhir kali, tindakan ini akan gagal.</string>
+    <string name="silahkan_masukan_password_baru">Silahkan Masukan Password Baru</string>
+    <string name="ubah_password">Ubah Password</string>
+
+</resources>

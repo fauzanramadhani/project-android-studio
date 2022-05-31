@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".thirdFragment">
+
+    <LinearLayout
+        android:id="@+id/linear_Layout_setting_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_setting_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="20dp"
+            android:paddingStart="5dp">
+        <ImageView
+            android:id="@+id/backArrow_setting_button"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/backarrow" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/pengaturan_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pengaturan"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/cloudy"
+            android:layout_marginStart="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_Layout_setting_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        app:layout_constraintStart_toStartOf="@id/linear_Layout_setting_1"
+        app:layout_constraintTop_toBottomOf="@id/linear_Layout_setting_1">
+
+        <LinearLayout
+            android:id="@+id/linear_Layout_setting_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:paddingStart="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/change_password_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/padlock"
+                />
+            <TextView
+                android:id="@+id/change_password_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ubah_sandi"
+                android:paddingTop="7dp"
+                android:paddingStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+                android:textColor="@color/cloudy"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_Layout_setting_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:paddingStart="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/change_info_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_people"
+                />
+            <TextView
+                android:id="@+id/change_info_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ubah_informasi"
+                android:paddingTop="7dp"
+                android:paddingStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+                android:textColor="@color/cloudy"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_Layout_setting_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:paddingStart="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/customers_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/customerservice"
+                />
+            <TextView
+                android:id="@+id/customers_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bantuan"
+                android:paddingTop="7dp"
+                android:paddingStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+                android:textColor="@color/cloudy"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_Layout_setting_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/signout_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/logout"
+                />
+            <TextView
+                android:id="@+id/signout_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logout_akun"
+                android:paddingTop="7dp"
+                android:paddingStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+                android:textColor="@color/cloudy"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
