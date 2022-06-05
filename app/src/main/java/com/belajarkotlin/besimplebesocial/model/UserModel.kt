@@ -8,6 +8,7 @@ data class UserModel(
     val name: String,
     val noHouse: String,
     val noTelp: Long,
+    val gajiFamily: Long,
     val hasData: Boolean)
 
 

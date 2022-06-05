@@ -54,6 +54,7 @@ class SignUp : AppCompatActivity() {
             user.name,
             user.noHouse,
             user.noTelp,
+            user.gajiFamily,
             user.hasData
         )
 //        userDao.updateUser(newUser.toUserEntity())
@@ -70,7 +71,7 @@ class SignUp : AppCompatActivity() {
         }
         else {
             val nullEmptyString = "Data Kosong"
-            val nullEmptyInt = (0..10000000).random()
+            val nullEmptyInt = (0..10).random()
             val EmptyData = false
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
@@ -85,6 +86,7 @@ class SignUp : AppCompatActivity() {
                             nik = nullEmptyInt.toLong(),
                             noHouse = nullEmptyString,
                             noTelp = nullEmptyInt.toLong(),
+                            gajiFamily = nullEmptyInt.toLong(),
                             hasData = EmptyData
                         )
                         regisUser(newUser)

@@ -53,7 +53,7 @@ class Login : AppCompatActivity() {
         val emails = findViewById<EditText>(R.id.email_edit_text)
         val passwords = findViewById<EditText>(R.id.password_edit_text)
         val email = emails.text.toString().trim()
-        val password = passwords.text.toString().trim()
+        val password = passwords.text.toString()
 
         if (email == "") {
             Toast.makeText(this, "Email tidak boleh kosong!", Toast.LENGTH_LONG).show()

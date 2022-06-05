@@ -6,4 +6,5 @@ interface Communicator {
     fun changeInfo()
     fun changePassword()
     fun onClickWhatsapp()
+    fun createPost(descriptionText:String)
 }

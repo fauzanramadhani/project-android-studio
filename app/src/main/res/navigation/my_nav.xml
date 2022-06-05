@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_first" />
     <fragment
         android:id="@+id/post_button"
-        android:name="com.belajarkotlin.besimplebesocial.SecondFragment"
+        android:name="com.belajarkotlin.besimplebesocial.secondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" />
     <fragment

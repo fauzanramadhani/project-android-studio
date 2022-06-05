@@ -41,5 +41,11 @@
     <string name="explain_change_password">Tindakan ini mengharuskan Anda untuk pernah login baru-baru ini. Jika Anda sudah cukup lama sejak Login terakhir kali, tindakan ini akan gagal.</string>
     <string name="silahkan_masukan_password_baru">Silahkan Masukan Password Baru</string>
     <string name="ubah_password">Ubah Password</string>
+    <string name="buat_postingan">Buat Postingan</string>
+    <string name="apa_yang_sedang_terjadi">Apa yang sedang terjadi?</string>
+    <string name="posting">POSTING</string>
+    <string name="show_gaji_value">90000000</string>
+    <string name="show_gaji">Pendapatan Keluarga Pertahun</string>
+    <string name="example_text">Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak.</string>
 
 </resources>

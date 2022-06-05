@@ -19,9 +19,6 @@
             android:name=".ShowDataActivity"
             android:exported="false" />
         <activity
-            android:name=".ChangeInfoActivity"
-            android:exported="false" />
-        <activity
             android:name=".ListItemActivity"
             android:exported="false" />
         <activity

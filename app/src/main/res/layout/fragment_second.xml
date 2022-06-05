@@ -1,14 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SecondFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    android:layout_height="wrap_content"
+    tools:context=".secondFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <LinearLayout
+            android:id="@+id/linear_Layout_post_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:id="@+id/linear_layout_post_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingStart="5dp">
+                <ImageView
+                    android:id="@+id/backArrow_show_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:background="@drawable/backarrow" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/pengaturan_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buat_postingan"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/cloudy"
+                android:layout_marginStart="10dp"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/post_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/apa_yang_sedang_terjadi"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:maxLines="5"
+            app:counterEnabled="true"
+            app:counterMaxLength="280"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_Layout_post_1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/post_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center"
+                android:inputType="textCapSentences|textMultiLine"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/addImgageButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/addphoto"
+            app:layout_constraintEnd_toEndOf="@id/post_text_layout"
+            app:layout_constraintBottom_toBottomOf="@id/post_text_layout"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="5dp"
+            android:alpha="0.5"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="85dp"
+            android:paddingBottom="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_text_layout">
+        <Button
+            android:id="@+id/post_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/posting"
+            android:fontFamily="sans-serif-thin"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            app:layout_constraintTop_toBottomOf="@+id/post_text_layout"
+            app:cornerRadius="10dp"
+            />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

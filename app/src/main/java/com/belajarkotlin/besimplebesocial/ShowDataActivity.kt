@@ -14,6 +14,7 @@ import com.google.firebase.database.*
 import com.google.firebase.database.core.view.Change
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import java.net.ProtocolFamily
 
 class ShowDataActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -22,6 +23,7 @@ class ShowDataActivity : AppCompatActivity() {
     private lateinit var name:String
     private lateinit var address: String
     private lateinit var phone: String
+    private lateinit var gajiFamily: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_show_data)
@@ -54,21 +56,24 @@ class ShowDataActivity : AppCompatActivity() {
                 name = snapshot.child("name").getValue(String::class.java).toString()
                 address = snapshot.child("noHouse").getValue(String::class.java).toString()
                 phone = snapshot.child("noTelp").getValue(Long::class.java).toString()
-                showData(nik,name,address,phone)
+                gajiFamily = snapshot.child("gajiFamily").getValue(Long::class.java).toString()
+                showData(nik,name,address,phone,gajiFamily)
             }
             override fun onCancelled(error: DatabaseError) {
                 TODO("Not yet implemented")
             }
         })
     }
-    fun showData(nikShow:String, nameShow: String, addressShow:String, phoneShow:String) {
+    fun showData(nikShow:String, nameShow: String, addressShow:String, phoneShow:String, gajiFamily: String) {
         val nikView = findViewById<TextView>(R.id.show_nik_value)
         val nameView = findViewById<TextView>(R.id.show_name_value)
         val addressView = findViewById<TextView>(R.id.show_alamat_value)
         val phoneView = findViewById<TextView>(R.id.show_telp_value)
+        val gajiFamilyView = findViewById<TextView>(R.id.show_gaji_value)
         nikView.setText(nikShow)
         nameView.setText(nameShow)
         addressView.setText(addressShow)
         phoneView.setText(phoneShow)
+        gajiFamilyView.setText(gajiFamily)
     }
 }

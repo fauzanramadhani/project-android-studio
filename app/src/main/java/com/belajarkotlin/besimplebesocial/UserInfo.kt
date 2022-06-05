@@ -23,6 +23,7 @@ class UserInfo : AppCompatActivity() {
     private lateinit var nameInput: EditText
     private lateinit var noHouseInput: EditText
     private lateinit var noTelpInput: EditText
+    private lateinit var gajiFammilyInput: EditText
     var backPressedTime: Long = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +41,7 @@ class UserInfo : AppCompatActivity() {
         nameInput = findViewById(R.id.nama_edit_text)
         noHouseInput = findViewById(R.id.no_rumah_edit_text)
         noTelpInput = findViewById(R.id.telefon_edit_text)
+        gajiFammilyInput = findViewById(R.id.gaji_edit_text)
     }
     fun regisUser(user: UserModel) {
 //        val dbLocal =
@@ -51,6 +53,7 @@ class UserInfo : AppCompatActivity() {
             user.name,
             user.noHouse,
             user.noTelp,
+            user.gajiFamily,
             user.hasData
         )
 
@@ -85,6 +88,8 @@ class UserInfo : AppCompatActivity() {
             Toast.makeText(this, "Nomor Rumah tidak boleh kosong!", Toast.LENGTH_LONG).show()
         } else if (noTelpInput.text.toString() == "") {
             Toast.makeText(this, "Nomor Telepon tidak boleh kosong!", Toast.LENGTH_LONG).show()
+        } else if (gajiFammilyInput.text.toString() == "") {
+            Toast.makeText(this, "Pendapatan Keluarga tidak boleh kosong!", Toast.LENGTH_LONG).show()
         }
         else {
             val noEmptyData = true
@@ -94,6 +99,7 @@ class UserInfo : AppCompatActivity() {
                 nik = nikInput.text.toString().toLong(),
                 noHouse = noHouseInput.text.toString(),
                 noTelp = noTelpInput.text.toString().toLong(),
+                gajiFamily = gajiFammilyInput.text.toString().toLong(),
                 hasData = noEmptyData
             )
             regisUser(newUserMap)

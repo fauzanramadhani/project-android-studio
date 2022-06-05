@@ -240,6 +240,53 @@
                     android:textColor="@color/cloudy"
                     />
             </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_Layout_show_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:paddingStart="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/show_gaji_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_dollar"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/show_gaji_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_gaji_value"
+                    android:paddingTop="2dp"
+                    android:paddingStart="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/show_gaji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_gaji"
+                    android:paddingTop="2dp"
+                    android:paddingStart="10dp"
+                    android:textSize="7sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-thin"
+                    android:textColor="@color/cloudy"
+                    />
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
